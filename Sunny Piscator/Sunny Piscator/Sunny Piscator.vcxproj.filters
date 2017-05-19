@@ -19,6 +19,9 @@
     <Filter Include="Game Control Source Files">
       <UniqueIdentifier>{b06b5e30-032e-49c9-b64b-1aad78c537e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Appearance">
+      <UniqueIdentifier>{fe7b402c-6bc2-4f88-8e78-04bf78a154e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -29,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Game Control Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Colour.h">
+      <Filter>Appearance</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

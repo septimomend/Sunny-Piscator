@@ -33,7 +33,8 @@ bool sInOut::GetResponse()
 //
 bool sInOut::Waiting() 
 { 
-	return !kbhit();
+	return !kbhit(); // returns 0 (means kbhit is false that means key is not pressed)
+					 // if kbhit != 0 (ie true) - key pressed
 }
 
 // get pressed key
