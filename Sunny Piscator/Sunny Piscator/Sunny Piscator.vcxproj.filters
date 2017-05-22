@@ -36,6 +36,9 @@
     <ClInclude Include="Colour.h">
       <Filter>Appearance</Filter>
     </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Game Control Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

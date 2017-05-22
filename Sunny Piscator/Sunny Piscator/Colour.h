@@ -1,5 +1,5 @@
 // Colour.h - header file contains definition of class representing colour of interface
-//#ifdef COLOUR_H
+#ifndef COLOUR_H
 #define COLOUR_H
 #include "stdafx.h"
 
@@ -35,4 +35,4 @@ private:
 	void SetConsole();
 };
 
-//#endif // COLOUR_H
+#endif // COLOUR_H

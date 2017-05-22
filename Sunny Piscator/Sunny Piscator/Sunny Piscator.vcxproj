@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Colour.h" />
+    <ClInclude Include="Cursor.h" />
     <ClInclude Include="In_Out.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Timer.h" />
