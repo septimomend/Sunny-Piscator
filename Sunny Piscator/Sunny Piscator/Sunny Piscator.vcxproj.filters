@@ -39,6 +39,9 @@
     <ClInclude Include="Cursor.h">
       <Filter>Game Control Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Randomizer.h">
+      <Filter>Game Control Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

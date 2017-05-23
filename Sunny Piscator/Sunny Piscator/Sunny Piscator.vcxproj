@@ -144,6 +144,7 @@
     <ClInclude Include="Colour.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="In_Out.h" />
+    <ClInclude Include="Randomizer.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
