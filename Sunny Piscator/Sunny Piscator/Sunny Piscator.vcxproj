@@ -152,6 +152,7 @@
     <ClCompile Include="Colour.cpp" />
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="In_Out.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
