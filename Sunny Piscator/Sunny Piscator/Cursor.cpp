@@ -46,7 +46,7 @@ void Cursor::Default()
 																		 // dwSize - a COORD structure that contains the size of the console
 																		 // screen buffer, in character columns and rows.
 	DWORD symbols;
-	if (!FillConsoleOutputCharacter(m_hOut, (TCHAR) ' ', coordSize, startPoint, &symbols)) // if not writed a character to the console screen
+	if (!FillConsoleOutputCharacter(m_hOut, (TCHAR) ' ', coordSize, startPoint, &symbols)) // writes a character to the console screen
 																						   // buffer a specified number of times, beginning
 																						   // at the specified coordinates
 																							/**********************************************************************************
