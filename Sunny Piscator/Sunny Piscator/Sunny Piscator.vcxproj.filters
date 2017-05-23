@@ -53,5 +53,8 @@
     <ClCompile Include="Colour.cpp">
       <Filter>Appearance</Filter>
     </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Game Control Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

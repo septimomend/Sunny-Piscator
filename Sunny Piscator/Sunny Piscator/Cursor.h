@@ -21,7 +21,7 @@ private:
 											   /**********************************************************************************
 											   * https://msdn.microsoft.com/ru-ru/library/windows/desktop/ms682093(v=vs.85).aspx *
 											   ***********************************************************************************/
-	COORD m_coord; // Defines the coordinates of a character cell in a console screen buffer.
+	COORD m_coord; // Defines the coordinates of a character cell in a console screen buffer. Parameters type - SHORT
 				   // The origin of the coordinate system (0,0) is at the top, left cell of the buffer.
 				   /**********************************************************************************
 				   * https://msdn.microsoft.com/ru-ru/library/windows/desktop/ms682119(v=vs.85).aspx *
