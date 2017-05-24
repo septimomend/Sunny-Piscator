@@ -141,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Colour Controller.h" />
     <ClInclude Include="Colour.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="In_Out.h" />
