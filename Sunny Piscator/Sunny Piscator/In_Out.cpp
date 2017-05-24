@@ -49,3 +49,30 @@ void sInOut::Get()
 				// The getch() function reads a single character from the keyboard but does not show on the screen. 
 				//For this functionality, you can use the getch() function to hold the output window until hitting any key from the keyboard.
 }
+
+
+sInOut& sInOut::operator >> (int& var)
+{
+	do
+	{
+		if (m_Response)
+			var = getche(); // getche() function echoes the character to the screen whereas getch() does not do so
+		else
+			var = getch(); // The getch() function reads a single character from the keyboard but does not show on the screen
+	} while (var == 0 || var == 224);
+	return *this; // returns object
+}
+
+sInOut& sInOut::operator >> (char& var)
+{
+	int k;
+	do
+	{
+		if (m_Response)
+			k = getche(); // getche() function echoes the character to the screen whereas getch() does not do so
+		else
+			k = getch();  // The getch() function reads a single character from the keyboard but does not show on the screen
+	} while (k == 0 || k == 224);
+	var = (char)k;
+	return *this; // returns object
+}
