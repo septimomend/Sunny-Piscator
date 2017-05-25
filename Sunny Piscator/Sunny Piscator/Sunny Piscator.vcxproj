@@ -150,6 +150,7 @@
     <ClInclude Include="Timer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Colour Controller.cpp" />
     <ClCompile Include="Colour.cpp" />
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="In_Out.cpp" />
