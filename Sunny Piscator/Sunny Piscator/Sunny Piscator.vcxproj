@@ -146,6 +146,7 @@
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="In_Out.h" />
     <ClInclude Include="Randomizer.h" />
+    <ClInclude Include="Shape.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
@@ -155,6 +156,7 @@
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="In_Out.cpp" />
     <ClCompile Include="Randomizer.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>

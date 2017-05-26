@@ -22,6 +22,9 @@
     <Filter Include="Appearance">
       <UniqueIdentifier>{fe7b402c-6bc2-4f88-8e78-04bf78a154e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{d0faf05e-456e-4dd5-85e8-0db214efd834}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -45,6 +48,9 @@
     <ClInclude Include="Colour Controller.h">
       <Filter>Game Control Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -67,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="Colour Controller.cpp">
       <Filter>Game Control Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Shape</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
