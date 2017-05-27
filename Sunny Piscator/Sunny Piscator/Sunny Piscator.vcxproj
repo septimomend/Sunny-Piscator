@@ -144,6 +144,7 @@
     <ClInclude Include="Colour Controller.h" />
     <ClInclude Include="Colour.h" />
     <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Indicator.h" />
     <ClInclude Include="In_Out.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Shape.h" />
@@ -154,6 +155,7 @@
     <ClCompile Include="Colour Controller.cpp" />
     <ClCompile Include="Colour.cpp" />
     <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Indicator.cpp" />
     <ClCompile Include="In_Out.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Shape.cpp" />
