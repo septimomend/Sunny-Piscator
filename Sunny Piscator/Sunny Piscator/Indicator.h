@@ -7,7 +7,25 @@
 
 class Indicator
 {
-	// TODO
+public:
+	Indicator(int indSize, int x, int y); // cstr
+	void SetPosition(int x, int y); // sets coordinate position
+	void SetController(Cursor *crs, ColourAppearance* clr);  // sets cursor and colour
+	void SetColours(colour backc, colour meterc);
+	void VerPrintIndicator(); // static columns
+	void HorPrintIndicator(); // when gamr object is moving
+	void ReportTime(double time); // shows time
+	void Report(std::string message); // shows message
+	void VerTemp(int temp); // sets vertical limits
+	void HorTemp(int temp); // sets horizontal limits
+
+private:
+	int m_PosX, m_PosY, m_Ind, m_Temp;
+	double m_Time;
+	std::string m_Report;
+	Cursor* m_pCrs;
+	ColourAppearance* m_pClr;
+	colour m_Back, m_Indicalor;
 };
 
 #endif // !INDICATOR_H
