@@ -19,8 +19,8 @@ public:
 protected:
 	colour m_Back, m_Fore;
 	int m_X, m_Y;
-	Cursor* m_Crs; // cursor
-	ColourAppearance* m_Clr; // colour
+	Cursor* m_pCrs; // cursor
+	ColourAppearance* m_pClr; // colour
 };
 
 #endif // !COLOUR_CONTROLLER_H

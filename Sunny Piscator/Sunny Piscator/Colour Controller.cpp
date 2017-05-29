@@ -6,13 +6,13 @@ using namespace std;
 
 ColourController::ColourController() // cstr
 { 
-	m_Crs = 0; 
-	m_Clr = 0; 
+	m_pCrs = 0; 
+	m_pClr = 0; 
 	m_Back = White; 
 	m_Fore = White; 
 }
 
-ColourController::ColourController(Cursor* crs) : m_Crs(crs) // cstr 2
+ColourController::ColourController(Cursor* crs) : m_pCrs(crs) // cstr 2
 { 
 }
 
@@ -20,8 +20,8 @@ ColourController::ColourController(int x, int y, Cursor* crs, ColourAppearance *
 { 
 	m_X = x;
 	m_Y = y;
-	m_Crs = crs;
-	m_Clr = clr;
+	m_pCrs = crs;
+	m_pClr = clr;
 }
 
 void ColourController::SetCoordinates(int x, int y)
@@ -32,7 +32,7 @@ void ColourController::SetCoordinates(int x, int y)
 
 void ColourController::SetCursor(Cursor* crs) 
 {
-	m_Crs = crs;
+	m_pCrs = crs;
 }
 
 void ColourController::SetColour(colour back, colour fore) 
@@ -43,8 +43,8 @@ void ColourController::SetColour(colour back, colour fore)
 
 ColourController::~ColourController() 
 { 
-	if (m_Clr) 
-		delete[] m_Clr; 
-	if (m_Crs) 
-		delete[] m_Crs; 
+	if (m_pClr) 
+		delete[] m_pClr; 
+	if (m_pCrs) 
+		delete[] m_pCrs; 
 }
