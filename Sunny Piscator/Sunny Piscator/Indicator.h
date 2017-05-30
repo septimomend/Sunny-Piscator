@@ -11,7 +11,7 @@ public:
 	Indicator(int indSize, int x, int y); // cstr
 	void SetPosition(int x, int y); // sets coordinate position
 	void SetController(Cursor *crs, ColourAppearance* clr);  // sets cursor and colour
-	void SetColours(colour backc, colour meterc);
+	void SetColours(colour backClr, colour indClr);
 	void VerPrintIndicator(); // static columns
 	void HorPrintIndicator(); // when gamr object is moving
 	void ReportTime(double time); // shows time
