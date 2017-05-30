@@ -80,81 +80,95 @@ void Indicator::VerPrintIndicator() // static columns
 	}
 
 }
-void Indicator::HorPrintIndicator() 
+void Indicator::HorPrintIndicator()  // when game object is moving
 {
 	for (int i = 1; i < m_Ind + 3; i++) 
 	{
 		/*
 		* first column
 		*/
-		m_pCrs->setPosition(xpos + i, ypos);
-		m_pClr->setBackground(White);
+		m_pCrs->SetPosition(m_PosX + i, m_PosY);
+		m_pClr->SetBackground(White);
 		cout << " ";
 
-		if (i == 1) {
-			m_pCrs>setPosition(xpos + i, 1 + ypos);
-			m_pClr->setBackground(White);
+		/*
+		* second column
+		*/
+		if (i == 1) 
+		{
+			m_pCrs->SetPosition(m_PosX + i, 1 + m_PosY);
+			m_pClr->SetBackground(White);
 			cout << " ";
 
-			m_pCrs->setPosition(xpos + i, 3 + ypos); // printing side message
-			m_pClrx->setBackground(Black);
+			m_pCrs->SetPosition(m_PosX + i, 3 + m_PosY); // printing side message
+			m_pClr->SetBackground(Black);
 			cout << "0";
 		}
-		else if (i == ms + 2) {
-			m_pCrs->setPosition(xpos + i, 1 + ypos);
-			m_pClrx->setBackground(White);
+		else if (i == m_Ind + 2)
+		{
+			m_pCrs->SetPosition(m_PosX + i, 1 + m_PosY);
+			m_pClr->SetBackground(White);
 			cout << " ";
 
-			m_pCrs->setPosition(xpos + i, 3 + ypos); // printing side message
-			m_pClrx->setBackground(Black);
-			cout << ms;
+			m_pCrs->SetPosition(m_PosX + i, 3 + m_PosY); // printing side message
+			m_pClr->SetBackground(Black);
+			cout << m_Ind;
 		}
 
-		else if (i != ms + 2 || i != 1) {
-			m_pCrs->setPosition(xpos + i, 1 + ypos);
-			m_pClrx->setBackground(Black);// thermomerter level things
+		else if (i != m_Ind + 2 || i != 1) {
+			m_pCrs->SetPosition(m_PosX + i, 1 + m_PosY);
+			m_pClr->SetBackground(Black);// thermometer level things
 			cout << "|";
 		}
-		//third coloum
-		m_pCrs->setPosition(xpos + i, 2 + ypos);
-		m_pClrx->setBackground(White);
+		
+		/*
+		* third column
+		*/
+		m_pCrs->SetPosition(m_PosX + i, 2 + m_PosY);
+		m_pClr->SetBackground(White);
 		cout << " ";
 	}
 
 }
-void MeterClass::Message(string message) {
-	m_pCrs->setPosition(xpos + 6, ypos + 6);
-	m_pClrx->setBackground(Black);
-	cout << message;
-
+void Indicator::Report(string report) // shows message
+{
+	m_pCrs->SetPosition(m_PosX + 6, m_PosY + 6);
+	m_pClr->SetBackground(Black);
+	cout << report;
 }
 
-void MeterClass::timeMessage(double time) {
-	m_pCrs->setPosition(xpos + 6, ypos + 7);
-	m_pClrx->setBackground(Black);
-	cout << time << " Seconds";
-
+void Indicator::ReportTime(double time)  // shows time
+{
+	m_pCrs->SetPosition(m_PosX + 6, m_PosY + 7);
+	m_pClr->SetBackground(Black);
+	cout << time << " seconds";
 }
 
 
-void MeterClass::vTemp(int temp) {
-	for (int i = ms + 1; i > ms - temp + 1; i--) {
-		m_pCrs->setPosition(xpos + 1, i + ypos);
-		m_pClrx->setBackground(meter);
+void Indicator::VerTemp(int temp) // sets vertical limits
+{
+	for (int i = m_Ind + 1; i > m_Ind - temp + 1; i--) 
+	{
+		m_pCrs->SetPosition(m_PosX + 1, i + m_PosY);
+		m_pClr->SetBackground(m_Indicalor);
 		cout << " ";
-		m_pCrs->setPosition(xpos + 1, i + ypos);
-		m_pClrx->setForeground(back);
+
+		m_pCrs->SetPosition(m_PosX + 1, i + m_PosY);
+		m_pClr->SetForeground(m_Back);
 		cout << "_";
 	}
 }
 
-void MeterClass::hTemp(int temp) {
-	for (int i = 2; i < temp + 2; i++) {
-		m_pCrs->setPosition(xpos + i, 1 + ypos);
-		m_pClrx->setBackground(meter);
+void Indicator::HorTemp(int temp) // sets horizontal limits
+{
+	for (int i = 2; i < temp + 2; i++) 
+	{
+		m_pCrs->SetPosition(m_PosX + i, 1 + m_PosY);
+		m_pClr->SetBackground(m_Indicalor);
 		cout << " ";
-		m_pCrs->setPosition(xpos + i, 1 + ypos);
-		m_pClrx->setForeground(back);
+
+		m_pCrs->SetPosition(m_PosX + i, 1 + m_PosY);
+		m_pClr->SetForeground(m_Back);
 		cout << "|";
 	}
 }

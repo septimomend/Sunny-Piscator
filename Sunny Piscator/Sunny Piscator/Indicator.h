@@ -13,9 +13,9 @@ public:
 	void SetController(Cursor *crs, ColourAppearance* clr);  // sets cursor and colour
 	void SetColours(colour backClr, colour indClr);
 	void VerPrintIndicator(); // static columns
-	void HorPrintIndicator(); // when gamr object is moving
+	void HorPrintIndicator(); // when game object is moving
 	void ReportTime(double time); // shows time
-	void Report(std::string message); // shows message
+	void Report(std::string report); // shows message
 	void VerTemp(int temp); // sets vertical limits
 	void HorTemp(int temp); // sets horizontal limits
 
