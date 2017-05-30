@@ -146,6 +146,7 @@
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="Indicator.h" />
     <ClInclude Include="In_Out.h" />
+    <ClInclude Include="Limn.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="stdafx.h" />
@@ -157,6 +158,7 @@
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="Indicator.cpp" />
     <ClCompile Include="In_Out.cpp" />
+    <ClCompile Include="Limn.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="stdafx.cpp">
