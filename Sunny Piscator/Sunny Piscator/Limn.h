@@ -25,7 +25,7 @@ public:
 
 protected:
 	colour m_Back, m_Fore; 
-	ColourController* m_pClr;
+	ColourAppearance* m_pClrLimn;
 };
 
 #endif // !LIMN_H
