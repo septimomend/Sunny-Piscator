@@ -92,5 +92,8 @@
     <ClCompile Include="Limn.cpp">
       <Filter>Appearance</Filter>
     </ClCompile>
+    <ClCompile Include="Snow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -162,6 +162,7 @@
     <ClCompile Include="Limn.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Snow.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
