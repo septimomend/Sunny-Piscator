@@ -147,6 +147,7 @@
     <ClInclude Include="Indicator.h" />
     <ClInclude Include="In_Out.h" />
     <ClInclude Include="Limn.h" />
+    <ClInclude Include="Piscator.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Snow.h" />
@@ -160,6 +161,7 @@
     <ClCompile Include="Indicator.cpp" />
     <ClCompile Include="In_Out.cpp" />
     <ClCompile Include="Limn.cpp" />
+    <ClCompile Include="Piscator.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Snow.cpp" />

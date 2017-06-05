@@ -60,6 +60,9 @@
     <ClInclude Include="Snow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Piscator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -93,6 +96,9 @@
       <Filter>Appearance</Filter>
     </ClCompile>
     <ClCompile Include="Snow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Piscator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
