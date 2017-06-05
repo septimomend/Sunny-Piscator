@@ -149,6 +149,7 @@
     <ClInclude Include="Limn.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="Snow.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>

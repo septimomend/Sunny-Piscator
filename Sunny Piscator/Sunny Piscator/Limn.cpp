@@ -84,7 +84,7 @@ void Limn::LimnHorizontal(int x, int y, int howlong) // horizontal limits
 			m_pClrLimn->SetBackground(m_Back); // setting background colours
 			m_pClrLimn->SetForeground(m_Fore); // setting foreground colours
 			m_pCrs->SetPosition(i + x, y);
-			std::cout << " ";
+			cout << " ";
 		}
 	}
 }
@@ -98,7 +98,7 @@ void Limn::LimnVertical(int x, int y, int howlong) // draws vertical limits
 			m_pClrLimn->SetBackground(m_Back); // setting background colours
 			m_pClrLimn->SetForeground(m_Fore); // setting foreground colours
 			m_pCrs->SetPosition(x, i + y);
-			std::cout << " ";
+			cout << " ";
 		}
 	}
 }

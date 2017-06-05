@@ -57,6 +57,9 @@
     <ClInclude Include="Limn.h">
       <Filter>Appearance</Filter>
     </ClInclude>
+    <ClInclude Include="Snow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
