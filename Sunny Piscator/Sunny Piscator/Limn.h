@@ -16,6 +16,8 @@ public:
 	void SetColours(colour back_clr, colour fore_clr); // sets background colour
 	void LimnInstructions(); // draws game instructions
 	void LimnInstructions(int x, int y);
+	void LimnName(int x, int y);
+	void LimnIntro(int x, int y);
 	void LimnHorizontal(int x, int y, int howlong); // horizontal limits
 	void LimnVertical(int x, int y, int howlong); // draws vertical limits
 	void LimnScores(int score, float time, float highscore); // display scores
