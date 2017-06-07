@@ -40,39 +40,94 @@ void Limn::LimnInstructions() // draws game instructions
 
 void Limn::LimnInstructions(int x, int y)
 {
-	// sketch
-	// REDO
+	for (int j = 0; j < 40; ++j)
+	{
+		for (int i = 0; i < 29; i++) 
+		{
+			m_pClrLimn->SetBackground(Aqua); // setting background colours
+			m_pCrs->SetPosition(j + 1, i + 5);
+			cout << " ";
+		}
+	}
+
 	for (int j = 0; j < 20; ++j)
 	{
-		for (int i = 0; i < 30; i++) 
+		for (int i = 0; i < 33; i++) 
 		{
-			m_pClrLimn->SetBackground(Aqua);	// setting background colours
-			m_pCrs->SetPosition(j + 41, i + 1);	// setting foreground colours
+			m_pClrLimn->SetBackground(Blue); // setting background colours
+			m_pCrs->SetPosition(j + 41, i + 1);
+			cout << " ";
+		}
+	}
+
+	m_pCrs->SetPosition(x, y + 1);
+	m_pClrLimn->SetForeground(White); // setting foreground colours
+	cout << "by septimomend";
+	m_pCrs->SetPosition(x, y + 2);
+	m_pClrLimn->SetForeground(Black);
+	cout << "(Chapkailo I.)";
+	m_pCrs->SetPosition(x, y + 4);
+	m_pClrLimn->SetForeground(Yellow);
+
+	m_pCrs->SetPosition(x, y + 6);
+	m_pClrLimn->SetForeground(Yellow);
+	cout << "'p' - pause";
+	m_pCrs->SetPosition(x, y + 7);
+	cout << "'e' - exit";
+	m_pCrs->SetPosition(x - 1, y + 9);
+	m_pClrLimn->SetForeground(White);
+	cout << "Catched - score+2";
+	m_pCrs->SetPosition(x - 1, y + 10);
+	m_pClrLimn->SetForeground(White);
+	cout << "Missed  - score-2";
+}
+
+void Limn::LimnTitle(int x, int y)
+{
+	for (int j = 0; j < 40; ++j)
+	{
+		for (int i = 0; i < 3; i++) 
+		{
+			m_pClrLimn->SetBackground(Aqua); // setting background colours
+			m_pCrs->SetPosition(j + 1, i + 1);
 			cout << " ";
 		}
 	}
 	m_pCrs->SetPosition(x, y);
-	m_pClrLimn->SetForeground(Blue);
-	cout << "Sunny Piscat" << char(1) << "r";
-	m_pCrs->SetPosition(x, y + 1);
-	m_pClrLimn->SetForeground(White);
-	cout << "by septimomend";
-	m_pCrs->SetPosition(x, y + 3);
-	cout << "(Chapkailo I.)";
-	m_pCrs->SetPosition(x, y + 4);
-	m_pClrLimn->SetForeground(Blue);
-
-	m_pCrs->SetPosition(x, y + 6);
+	m_pClrLimn->SetForeground(White); // setting foreground colours
+	cout << "Sunny Piscat";
 	m_pClrLimn->SetForeground(Yellow);
-	cout << "'p' to pause";
-	m_pCrs->SetPosition(x, y + 7);
-	cout << "Esc to exit";
-	m_pCrs->SetPosition(x, y + 8);
+	cout << char(2);
 	m_pClrLimn->SetForeground(White);
-	cout << "Catch + 2";
-	m_pCrs->SetPosition(x, y + 9);
+	cout << "r";
+}
+
+void Limn::LimnIntro(int x, int y)
+{
+	for (int j = 0; j < 80; ++j)
+	{
+		for (int i = 0; i < 40; i++) 
+		{
+			m_pClrLimn->SetBackground(Aqua); // setting background colours
+			m_pCrs->SetPosition(j, i);
+			cout << " ";
+		}
+	}
+	m_pCrs->SetPosition(x, y);
+	m_pClrLimn->SetForeground(White); // setting foreground colours
+	cout << "              Welcome to the Sunny Piscator!" << endl;
+	m_pCrs->SetPosition(x, y + 2);
 	m_pClrLimn->SetForeground(White);
-	cout << "Miss - 2";
+	cout << "                 Do you love to eat snow?";
+	m_pCrs->SetPosition(x, y + 3);
+	m_pClrLimn->SetForeground(White);
+	cout << "So let's check how long you can catch snowflakes by mouth!" << endl;
+	m_pCrs->SetPosition(x, y + 25);
+	m_pClrLimn->SetForeground(White);
+	cout << "\t\t\t\tby septimomend";
+	m_pClrLimn->SetForeground(Black);
+	cout << " (Chapkailo I.)" << std::endl;
+	m_pClrLimn->SetBackground(Black);
 }
 
 void Limn::LimnHorizontal(int x, int y, int howlong) // horizontal limits
@@ -105,40 +160,35 @@ void Limn::LimnVertical(int x, int y, int howlong) // draws vertical limits
 
 void Limn::LimnScores(int score, float time, float highscore) // display scores and time
 {
-	// sketch
-	// REDO
 	m_pCrs->SetPosition(45, 20);
-	m_pClrLimn->SetBackground(Aqua);
-	m_pClrLimn->SetForeground(Yellow);
-	cout << "Score: " << score;
+	m_pClrLimn->SetBackground(Blue); // setting background colours
+	m_pClrLimn->SetForeground(Red);	 // setting foreground colours
+	cout << "Score: " << score << "   ";
 	m_pCrs->SetPosition(45, 21);
-	m_pClrLimn->SetBackground(Aqua);
-	m_pClrLimn->SetForeground(Yellow);
-	cout << "Time: " << time;
+	m_pClrLimn->SetBackground(Blue);
+	m_pClrLimn->SetForeground(Red);
+	cout << "Time:  " << time;
 	m_pCrs->SetPosition(45, 22);
-	m_pClrLimn->SetBackground(Aqua);
-	m_pClrLimn->SetForeground(Yellow);
-	cout << "Best: " << highscore;
+	m_pClrLimn->SetBackground(Blue);
+	m_pClrLimn->SetForeground(Red);
+	cout << "Best:  " << highscore;
 }
 
 void Limn::PlayGame() // limns action to play game
 {
-	// sketch
-	// REDO
-	m_pCrs->SetPosition(13, 15);
-	m_pClrLimn->SetBackground(Black);
+	m_pCrs->SetPosition(12, 20);
+	m_pClrLimn->SetBackground(Aqua);
 	m_pClrLimn->SetForeground(Yellow);
-	cout << "Press 's' to Play!";
+	cout << "Press 'g' to go!";
+	cout << endl << endl << "\t";
 }
 
 void Limn::GameOver() // shows message when game is over
 {
-	// sketch
-	// REDO
-	m_pCrs->SetPosition(13, 15);
-	m_pClrLimn->SetBackground(Black);
+	m_pCrs->SetPosition(15, 20);
+	m_pClrLimn->SetBackground(Aqua);
 	m_pClrLimn->SetForeground(Yellow);
-	cout << "G" << char(15) << "me " << char(2) << "ver";
+	cout << "Game " << char(1) << "ver!";
 }
 
 void Limn::LimnHighscore(float highscr) // show hightscore
