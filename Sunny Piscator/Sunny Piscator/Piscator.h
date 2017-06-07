@@ -8,6 +8,13 @@
 
 class Piscator : public Limn
 {
-	// TODO
+public:
+	Piscator();
+	void SetController(Cursor* crs, ColourAppearance* clr);
+	void Move(char direction); // moving of piscator using direction arrows or A/D buttons
+	int GetPstrX(); // returns the X postion of the piscator (cursor) 
+
+protected:
+	int m_pstrX, m_pstrY;
 };
 #endif // !PISCATOR_H
