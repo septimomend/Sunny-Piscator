@@ -12,10 +12,10 @@ Cursor::Cursor()
 											   // row coordinates of the cursor in the console screen buffer.
 }
 
-void Cursor::SetPosition(short x, short y)
+void Cursor::SetPosition(short x, short y, int shift)
 {
 	m_coord.X = x; // set X position
-	m_coord.Y = y; // set Y position
+	m_coord.Y = y + shift; // set Y position
 	SetConsole();
 }
 
@@ -65,4 +65,9 @@ void Cursor::Default()
 		return;
 
 	SetConsoleCursorPosition(m_hOut, startPoint); // Sets the cursor position in the specified console screen buffer.
+}
+
+void Cursor::SetConsole()
+{
+	SetConsoleCursorPosition(m_hOut, m_coord); // sets cursor position by coordinates in current console output handler
 }
