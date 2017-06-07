@@ -7,7 +7,7 @@ class Cursor
 {
 public:
 	Cursor(); // cstr
-	void SetPosition(short x, short y); // sets cursor's position
+	void SetPosition(short x, short y, int shift = 0); // sets cursor's position
 	short GetX(); // returns X coordinate
 	short GetY(); // returns Y coordinate
 	void Default(); // clears all parameters and sets default position 
