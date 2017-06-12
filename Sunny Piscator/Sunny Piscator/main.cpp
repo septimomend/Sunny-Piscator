@@ -3,9 +3,9 @@
  *
  * Sunny Piscator Game
  *
- * by septiomend
- * 09.06.2017     
- * 19:30 PM
+ * by septimomend
+ * 12.06.2017     
+ * 17:00 PM
 */
 #include "stdafx.h" 
 #include "Colour.h"
@@ -145,4 +145,3 @@ int main()
 	}
 	return 0;
 }
-
