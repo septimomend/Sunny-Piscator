@@ -195,3 +195,10 @@ void Limn::LimnHighscore(float highscr) // show hightscore
 {
 	// TODO
 }
+
+void Limn::LimnDefault()
+{
+	m_pCrs->SetPosition(5, 20);
+	m_pClrLimn->SetBackground(Aqua);
+	m_pClrLimn->SetForeground(Yellow);
+}

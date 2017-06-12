@@ -161,6 +161,7 @@
     <ClCompile Include="Indicator.cpp" />
     <ClCompile Include="In_Out.cpp" />
     <ClCompile Include="Limn.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Piscator.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Shape.cpp" />

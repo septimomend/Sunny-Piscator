@@ -43,7 +43,7 @@ void Snow::ShowSnow() // displays snow
 		{
 			m_pClrLimn->SetBackground(m_Back); // setting foreground colours
 			m_pClrLimn->SetForeground(White); // setting background colours
-			m_pCrs->SetPosition(2 + i, 1 + j); //setting correct position
+			m_pCrs->SetPosition(2 + i, 1 + j, 4); //setting correct position
 			cout << m_SnowArr[i][j];
 		}
 	}

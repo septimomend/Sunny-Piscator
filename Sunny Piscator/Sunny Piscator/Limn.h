@@ -24,6 +24,7 @@ public:
 	void PlayGame(); // limns action to play game
 	void GameOver(); // shows message when game is over
 	void LimnHighscore(float highscr); // show hightscore
+	void LimnDefault(); // sets down fore- and background settings
 
 protected:
 	colour m_Back, m_Fore; 
